@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- BEGIN STANDAD SECTION DO NOT EDIT
+    except for ensuring x:Uid="CustomRibbonTab" has a unique ID>
+    -->
+<RibbonControl
+	x:Uid="AddinRibbon" xmlns="clr-namespace:Autodesk.Windows;assembly=AdWindows"
+	xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:adwi="clr-namespace:Autodesk.Internal.Windows;assembly=AdWindows"
+	xmlns:system="clr-namespace:System;assembly=mscorlib"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="clr-namespace:Autodesk.Navisworks.Gui.Roamer.AIRLook;assembly=navisworks.gui.roamer">
+    <!-- END STANDARD SECTION DO NOT EDIT -->
+
+    <RibbonTab Id="ID_CustomTab_1">
+        <RibbonPanel x:Uid="RibbonPanel_1">
+            <RibbonPanelSource x:Uid="RibbonPanelSource_RibbonPanel_1" Title="Ferramentas">
+
+                <local:NWRibbonButton x:Uid="Button_1" Id="ID_Button_1"
+									Size="Large"
+									ShowText="True"
+									Text="Marcarção Manual"
+									Orientation="Vertical"/>
+
+                <local:NWRibbonButton x:Uid="Button_2" Id="ID_Button_2"
+									Size="Large"
+									ShowText="True"
+									Text="Indicar Parcial"
+									Orientation="Vertical"/>
+
+                <local:NWRibbonButton x:Uid="Button_1" Id="ID_Button_3"
+									Size="Large"
+									ShowText="True"
+									Text="NWD Tier Exporter"
+									Orientation="Vertical"/>
+
+            </RibbonPanelSource>
+        </RibbonPanel>
+    </RibbonTab>
+
+</RibbonControl>

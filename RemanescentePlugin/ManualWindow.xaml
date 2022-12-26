@@ -1,0 +1,16 @@
+﻿<Window x:Class="ClashMarcacao.ManualWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClashMarcacao"
+        mc:Ignorable="d"
+        Title="Marcação Manual" Height="145" Width="210" ResizeMode="NoResize" x:Name="manualWindow"
+        Topmost="True" Loaded="manualWindow_Loaded">
+    <Grid>
+        <StackPanel>
+            <ListView x:Name="listObj" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" Height="80" Width="210" HorizontalAlignment="Left"/>
+            <CheckBox x:Name="Propagar" Content="Propagar" Checked="CheckBox_Checked" HorizontalAlignment="Center" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
